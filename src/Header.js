@@ -1,11 +1,9 @@
 import logo from "./Logo.svg"
-import Nav from './Nav.js'
 
 function Header() {
   return (
     <header>
-      <img src={logo} alt="Little Lemon restaurant"/>
-      <Nav></Nav>
+      <img src={logo} width="204px" height="55px" alt="Little Lemon restaurant"/>
     </header>
   );
 }

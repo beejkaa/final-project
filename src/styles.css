@@ -1,0 +1,173 @@
+#root {
+  display: grid;
+  max-width: 100%;
+  height: 100%;
+  grid-template-areas: "header nav"
+  "main main"
+  "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 153px 5fr 100px;
+}
+header {
+  grid-area: header;
+  background-color: white;
+  padding-top: 50px;
+  margin-left: 80px;
+}
+header > img {
+  float: right;
+}
+nav {
+  grid-area: nav;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 50px;
+  
+}
+li {
+  float: left;
+}
+li a {
+  color: #333333;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+}
+main {
+  grid-area: main;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 426px;
+}
+#img_intro{
+margin-top: 50px;
+border-radius: 10%;
+}
+#little-lemon-intro{
+  background-color: #495E57;
+}
+.grid-child-content > h1 {
+  color: #F4CE14;
+  font-family: 'Markazi Text';
+  font-size: 64px;
+  font-weight: 500;
+  margin-block-end: 0.01em;
+}
+.grid-child-content {
+  padding-left: 40%;
+  width: 50%;
+}
+.grid-child-image {
+  padding-left: 10%;
+  width: 50%;
+}
+.grid-child-content > h2 {
+  color: white;
+  font-family: 'Markazi Text';
+  font-size: 40px;
+  font-weight: 500;
+  margin-block-start: 0.03em;
+}
+.grid-child-content > p {
+  color: #EDEFEE;
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 500;
+  margin-block-start: 0.03em;
+}
+.specials-section {
+  padding-top: 60px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+}
+.specials-section > h2 {
+  color: #333333;
+  font-family: 'Markazi Text';
+  font-size: 56px;
+  font-weight: 500;
+  margin-block-end: 0.01em;
+}
+.grid-container-specials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: 426px;
+  padding-top: 40px;
+}
+.grid-specials-content{
+  background-color: #EDEFEE;
+  padding-bottom: 5%;
+  justify-content: space-between;
+  align-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.grid-specials-content > img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.specials-price{
+  color: #EE9972;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 4%;
+}
+.grid-specials-content > h3 {
+
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #333333;
+  font-family: 'Karla';
+  font-size: 20px;
+  font-weight: bold;
+}
+.grid-specials-content > p {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #333333;
+  font-family: 'Karla';
+  font-size: 16px;
+}
+.grid-specials-content > a {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #333333;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: bold;
+}
+.delivery-icon{
+  padding-left: 10px;
+}
+.delivery-link{
+  text-decoration: none;
+  font-weight: bold;
+}
+#little-lemon-profile{
+  background-color: #495E57;
+}
+#little-lemon-specials{
+  background-color: white;
+}
+#little-lemon-testimonials{
+  background-color: #EDEFEE;
+}
+footer {
+  grid-area: footer;
+}
