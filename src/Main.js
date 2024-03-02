@@ -3,24 +3,17 @@ import GreekSalad from "./images/greek_salad.jpg"
 import Bruchetta from "./images/bruchetta.svg"
 import Dessert from "./images/lemon dessert.jpg"
 import DeliveryIcon from "./images/motorcycle.png"
+import Person from "./images/person.png"
+import ProfilePhoto from "./images/profile_photo (2).png"
 function Main() {
     return (
-      <main>
-        <article id="little-lemon-intro">
-        <div class="grid-container">
-          <div class="grid-child-content">
-            <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="grid-child-image">
-            <img src={Introimg} width="307px" height="422px" id="img_intro" alt=""/>
-          </div>
-        </div>
-        </article>
+      <main id="homepage">
         <article id="little-lemon-specials">
         <div class="specials-section">
-          <h2>Specials</h2>
+          <div class="specials-heading">
+            <h2>Specials</h2>
+            <div class="button"><a href="#" role="button">Online Menu</a></div>
+          </div>
           <div class="grid-container-specials">
             <div class="grid-specials-content">
               <img src={GreekSalad} width="272px" height="180 px" />
@@ -56,10 +49,55 @@ function Main() {
         </div>
         </article>
         <article id="little-lemon-testimonials">
-          <h1>Testimonials</h1>
+        <div class="testimonials-section">
+          <h2>Testimonials</h2>
+          <div class="grid-container-testimonials">
+            <div class="grid-testimonials-content">
+              <h3>Rating</h3>
+              <div class="person-info">
+                <img class="person-icon" src={Person} alt="" width="60 px" height="60 px" />
+                <p class="person-name">Name</p>
+              </div>
+              <p>Review here</p>
+            </div>
+            <div class="grid-testimonials-content">
+              <h3>Rating</h3>
+              <div class="person-info">
+                <img class="person-icon" src={Person} alt="" width="60 px" height="60 px" />
+                <p class="person-name">Name</p>
+              </div>
+              <p>Review here</p>
+            </div>
+            <div class="grid-testimonials-content">
+              <h3>Rating</h3>
+              <div class="person-info">
+                <img class="person-icon" src={Person} alt="" width="60 px" height="60 px" />
+                <p class="person-name">Name</p>
+              </div>
+              <p>Review here</p>
+            </div>
+            <div class="grid-testimonials-content">
+              <h3>Rating</h3>
+              <div class="person-info">
+                <img class="person-icon" src={Person} alt="" width="60 px" height="60 px" />
+                <p class="person-name">Name</p>
+              </div>
+              <p>Review here</p>
+            </div>
+          </div>
+        </div>
         </article>
         <article id="little-lemon-profile">
-          <h1>Little Lemon</h1>
+        <div class="profile-container">
+          <div class="profile-content">
+            <h2>Little Lemon</h2>
+            <h3>Chicago</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="profile-image">
+            <img src={ProfilePhoto} width="340px" height="390px" id="profile-photo" alt=""/>
+          </div>
+        </div>
         </article>
       </main>
     );

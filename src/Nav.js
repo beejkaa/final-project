@@ -1,8 +1,8 @@
 function Nav() {
     return (
       <nav class="nav-bar">
-        <ul>
-          <li id="nav-list">
+        <ul class="nav-list">
+          <li>
             <a href="#">Home</a>
           </li>
           <li>
