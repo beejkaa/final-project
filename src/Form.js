@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import useSubmit from "./hooks/useSubmit.jsx";
-import { useAlertContext } from "./context/alertContext.jsx";
 
 function Form() {
     const [loading, setLoading] = useState(false);
@@ -71,14 +69,14 @@ function Form() {
                     <div className="form-fields">
                         <label htmlFor="reservation-occasion">Select Occasion:</label>
                         <select id="occasion-select" name="occassion" value={formik.values.occassion} onChange={formik.handleChange} onBlur={formik.handleBlur}>
-                            <option selected disabled hidden>Occassion</option>
+                            <option value="0">Select Occasion</option>
                             <option value="1">Birthday</option>
                             <option value="2">Enagagement</option>
                             <option value="3">Anniversary</option>
                         </select>
                         {formik.touched.occassion && formik.errors.occassion && (<p className="error-status">{formik.touched.occassion && formik.errors.occassion}</p>)}
                     </div>
-                    <div className="button" id="availability-btn"><a href="#" role="button">Check the availability</a></div>
+                    <div className="availability-button" id="availability-btn"><a href="#" role="button">Check the availability</a></div>
                 </fieldset>
                 <hr></hr>
                 <fieldset>
